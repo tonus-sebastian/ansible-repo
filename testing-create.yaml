@@ -2,10 +2,6 @@
 - hosts: all
   become: true
   tasks:
-   - name: Install Docker
-  gather_facts: No
-  hosts: dev
-  tasks:
     - name: Install yum utils
       yum:
         name: yum-utils
