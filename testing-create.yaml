@@ -3,11 +3,12 @@
   become : true
   tasks:
   # any task name
-  - name: Test Task
-    # use file module to set the file state
-    file:
-      path: /home/cent/test.conf
-      state: touch
-      owner: cent
-      group: cent
-      mode: 0600
+ - name: Install system updates for centos systems
+      yum:
+        name: '*'
+        state: latest
+        update_cache: yes
+       #cache_valid_time: 3600
+      when:
+        - ansible_os_family == "RedHat"
+        - ansible_distribution == "CentOS"
