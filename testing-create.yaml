@@ -1,14 +1,9 @@
 ---
 - hosts: all
-  become : true
+
+  become: true
   tasks:
-  # any task name
- - name: Install system updates for centos systems
-      yum:
-        name: '*'
-        state: latest
+    - name: update apt packages
+      apt:
+        upgrade: yes
         update_cache: yes
-       #cache_valid_time: 3600
-      when:
-        - ansible_os_family == "RedHat"
-        - ansible_distribution == "CentOS"
