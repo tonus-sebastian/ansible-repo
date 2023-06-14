@@ -11,3 +11,5 @@
       owner: cent
       group: cent
       mode: 0600
+      
+      test
