@@ -1,4 +1,7 @@
 # Docker Compose install Ansible Semphore 
+![image](https://github.com/tonus-sebastian/ansible-repo/assets/52061104/e7e11a42-12c4-4b06-931d-965a1bfa286c)
+
+
 ```
 services:
   # uncomment this section and comment out the mysql section to use postgres instead of mysql
