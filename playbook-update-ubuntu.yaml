@@ -7,8 +7,13 @@
       apt:
         upgrade: yes
         update_cache: yes
-    - name: create user on remote host
-      ansible.builtin.user:
-        name: biznetdev
-        shell: /bin/bash
-        group: wheel
+    - name: Creat A Login User
+        user:
+         name: biznetdev
+         password: 'changeme'
+         shell: /bin/bash
+         state: present
+         shell: /bin/bash
+         system: no
+         createhome: yes
+         home: /home/biznetdev
