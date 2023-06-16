@@ -10,7 +10,7 @@
     - name: Creat A Login User
       user:
         name: biznetdev
-        password: 'changeme'
+        password: $6$0AqYCv5Qe8$9wODNGfdc5KW9bbzOC7lA515EGga0HOGkmScgx98ouCUphXWxvF8bs2BxK1d/s8vaYMdAFySL6ntoIiKEu5R2/
         shell: /bin/bash
         state: present
         shell: /bin/bash
