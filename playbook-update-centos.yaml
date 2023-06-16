@@ -30,7 +30,7 @@
         state: started
         enabled: yes
       become: yes
-    - name: Add user artem to docker group
+    - name: Add user biznetdev to docker group
       user:
         name: biznetdev
         groups: docker
