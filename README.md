@@ -64,5 +64,6 @@ volumes:
   semaphore-mysql: # to use postgres, switch to: semaphore-postgres
 ```
 ## Make Password SHA
+```
 mkpasswd --method=SHA-512 
-
+```
